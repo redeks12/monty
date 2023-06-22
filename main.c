@@ -31,7 +31,7 @@ int main(int ac, char **av)
                         bs = atoi(code);
                         if (bs)
                         {
-                                fprintf(stderr,"L%d: usage: push integer", line_num);
+                                fprintf(stderr,"L%d: usage: push integer\n", line_num);
                                 exit(EXIT_FAILURE);
                         }
                         push(bs);
