@@ -1,9 +1,9 @@
 #include "monty.h"
-void pop(stack_t *stack, int item)
+void pop()
 {
-	stack_t *t;
+	int item;
 
-	if (*stack == NULL)
+	if (temp == NULL)
 	{
 		fprintf(stderr, "L%d: can't pop an empty stack\n");
 		exit(EXIT_FAILURE);
