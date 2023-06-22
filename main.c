@@ -10,6 +10,7 @@ int main(int ac, char **av)
         char buff[256];
         char *code;
         int bs;
+        stack_size = 0;
         stack_t *mainstack = NULL;
         if (ac != 2)
         {
