@@ -1,6 +1,6 @@
 #include "monty.h"
 
-void push( int item);
+void push(int item);
 void pall();
 int line_num = 0;
 
@@ -11,7 +11,6 @@ int main(int ac, char **av)
         char *code;
         int bs;
         stack_size = 0;
-        stack_t *mainstack = NULL;
         if (ac != 2)
         {
                 fprintf(stderr, "USAGE: monty file\n");
@@ -31,7 +30,7 @@ int main(int ac, char **av)
                 {
                         code = strtok(NULL," \t\n");
                         bs = atoi(code);
-                        push(top, bs);
+                        push(bs);
                 }
                 else if (strcmp(code, "pall") == 0)
                         pall();
@@ -44,16 +43,6 @@ int main(int ac, char **av)
         return (0);
 }
 
-// int main(void)
-// {
-//         stack_t *newstack = NULL;
-//         push(newstack, 10);
-//         push(newstack, 21);
-//         push(newstack, 32);
-//         push(newstack, 45);
-//         pall();
-
-// }
 
 void push(int item)
 {
