@@ -66,9 +66,14 @@ void pall()
 {
         stack_t *temp;
         temp = top;
-        while (temp)
+        if (stack_size > 0)
         {
-                printf("%d\n", temp->n);
-                temp = temp->next;
-        }       
+                while (temp)
+                {
+                        printf("%d\n", temp->n);
+                        temp = temp->next;
+                }       
+        }
+        
+                
 }
