@@ -1,7 +1,7 @@
 #include "monty.h"
 
 
-int line_num = 0;
+int line_num = 1;
 
 int main(int ac, char **av)
 {
@@ -27,7 +27,13 @@ int main(int ac, char **av)
                 if (strcmp(code, "push") == 0)
                 {
                         code = strtok(NULL," \t\n");
+
                         bs = atoi(code);
+                        if (bs == 0)
+                        {
+                                fprintf(stderr,"L%d: usage: push integer", line_num);
+                                exit(EXIT_FAILURE);
+                        }
                         push(bs);
                 }
                 else if (strcmp(code, "pall") == 0)
