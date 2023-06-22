@@ -1,10 +1,12 @@
 #ifndef MONTY_H
 #define MONTY_H
+
 #include <stdio.h>
 #include <stdbool.h>
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
+
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
@@ -20,7 +22,8 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
-
+stack_t *top = NULL;
+int stack_size = 0;
 
 /**
  * struct instruction_s - opcode and its function

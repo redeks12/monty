@@ -1,3 +1,6 @@
-   omo how tins
- howfar watin de
-how u de
+push 1
+push 2
+push 3
+push 4
+push 5
+pall
