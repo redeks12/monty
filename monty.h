@@ -23,7 +23,7 @@ typedef struct stack_s
         struct stack_s *next;
 } stack_t;
 stack_t *top = NULL;
-int stack_size = 0;
+extern int stack_size = 0;
 
 /**
  * struct instruction_s - opcode and its function
