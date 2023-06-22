@@ -1,6 +1,6 @@
 #include "monty.h"
 
-void push(stack_t *stack, int item);
+void push( int item);
 void pall();
 int line_num = 0;
 
@@ -55,7 +55,7 @@ int main(int ac, char **av)
 
 // }
 
-void push(stack_t *stack, int item)
+void push(int item)
 {
         stack_t *temp = malloc(sizeof(stack_t));
 
