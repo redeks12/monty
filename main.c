@@ -21,8 +21,8 @@ int main(int ac, char **av)
         while(fgets(buff, sizeof(buff), fl))
         {
                 printf("%s\n", buff);
-                readLineIgnoringWhitespace(buff);
-                printf("%s\n", buff);
+        //        readLineIgnoringWhitespace(buff);
+          //      printf("%s\n", buff);
         }
 
 
