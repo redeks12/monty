@@ -29,7 +29,7 @@ int main(int ac, char **av)
                         code = strtok(NULL," \t\n");
 
                         bs = atoi(code);
-                        if (bs == 0)
+                        if (bs)
                         {
                                 fprintf(stderr,"L%d: usage: push integer", line_num);
                                 exit(EXIT_FAILURE);
