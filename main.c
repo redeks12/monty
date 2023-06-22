@@ -32,9 +32,7 @@ int main(int ac, char **av)
                 }
                 else if (strcmp(code, "pall") == 0)
                         pall();
-                line_num++;
-                printf("%d\n", line_num);
-                        
+                line_num++;                        
 
         }
 
