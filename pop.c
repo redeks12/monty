@@ -1,4 +1,4 @@
-#include "monty.h"
+/*#include "monty.h"
 void pop()
 {
 	int item;
@@ -8,4 +8,4 @@ void pop()
 		fprintf(stderr, "L%d: can't pop an empty stack\n");
 		exit(EXIT_FAILURE);
 	}
-}
+}*/
