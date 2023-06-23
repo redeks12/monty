@@ -23,7 +23,8 @@ int main(int ac, char **av)
 
         while(fgets(buff, sizeof(buff), fl))
         {
-                execute(buff);
+                if (buff[0] != '\n')
+                        execute(buff);
                 line_num++;                        
         }
         free(top);
