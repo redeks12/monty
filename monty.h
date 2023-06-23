@@ -22,9 +22,9 @@ typedef struct stack_s
         struct stack_s *prev;
         struct stack_s *next;
 } stack_t;
-stack_t *top = NULL;
+extern stack_t *top;
 extern int stack_size;
-int stack_size = 0;
+extern int line_num;
 
 
 /**
@@ -41,6 +41,8 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void push(int item);
-void pall();
+void push(stack_t **stack, unsigned int line_number);
+void pall(stack_t **stack, unsigned int line_number);
+void pint(stack_t **stack, unsigned int line_number);
+void execute(char *buffer);
 #endif
