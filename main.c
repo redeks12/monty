@@ -8,9 +8,7 @@ int main(int ac, char **av)
 {
         FILE *fl;
         char buff[256];
-        char *code;
 
-        int bs, i;
         if (ac != 2)
         {
                 fprintf(stderr, "USAGE: monty file\n");
