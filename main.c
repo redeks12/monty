@@ -73,8 +73,11 @@ void execute(char *buffer)
         char *code;
         int i = 0, ra;      
 
+        instruction_t opps[] = {{"push", push},
+                                {"pall", pall},
+                                {"pint", pint},
+                                {NULL, NULL}};
         code = strtok(buffer, " \t\n");
-        instruction_t opps[] = {{"push", push},{"pall", pall},{"pint", pint}, {NULL, NULL} };
 
         while(opps[i].opcode)
         {
